@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Quiz</title>
+</head>
+
+<body>
+    <header>
+        <h1>Quiz Time</h1>
+    </header>
+    <main>
+        <section id="usernameScreen">
+            <h2>Enter Your Username</h2>
+            <form id="usernameForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <button type="button" onclick="startQuiz()">Start Quiz</button>
+            </form>
+        </section>
+
+        <section id="quiz" style="display: none;">
+            <h2>Quiz Questions</h2>
+            <form id="quizForm">
+                <!-- Questions and Options go here -->
+                <!-- Question 1 -->
+                <div class="question">
+                    <p>1. What is the capital of Brazil?</p>
+                    <label><input type="radio" name="q1" value="Brasília"> Brasília</label>
+                    <label><input type="radio" name="q1" value="Rio de Janeiro"> Rio de Janeiro</label>
+                    <label><input type="radio" name="q1" value="São Paulo"> São Paulo</label>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="question">
+                    <p>2. Which planet is known as the Red Planet?</p>
+                    <label><input type="radio" name="q2" value="Earth"> Earth</label>
+                    <label><input type="radio" name="q2" value="Mars"> Mars</label>
+                    <label><input type="radio" name="q2" value="Venus"> Venus</label>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="question">
+                    <p>3. Who is the author of 'To Kill a Mockingbird'?</p>
+                    <label><input type="radio" name="q3" value="Harper Lee"> Harper Lee</label>
+                    <label><input type="radio" name="q3" value="J.K. Rowling"> J.K. Rowling</label>
+                    <label><input type="radio" name="q3" value="George Orwell"> George Orwell</label>
+                </div>
+
+                <!-- Question 4 -->
+                <div class="question">
+                    <p>4. What is the largest mammal on Earth?</p>
+                    <label><input type="radio" name="q4" value="Elephant"> Elephant</label>
+                    <label><input type="radio" name="q4" value="Blue Whale"> Blue Whale</label>
+                    <label><input type="radio" name="q4" value="Giraffe"> Giraffe</label>
+                </div>
+
+                <!-- Question 5 -->
+                <div class="question">
+                    <p>5. In which year did World War II end?</p>
+                    <label><input type="radio" name="q5" value="1943"> 1943</label>
+                    <label><input type="radio" name="q5" value="1945"> 1945</label>
+                    <label><input type="radio" name="q5" value="1950"> 1950</label>
+                </div>
+
+                <!-- Question 6 -->
+                <div class="question">
+                    <p>6. Who painted the Mona Lisa?</p>
+                    <label><input type="radio" name="q6" value="Vincent van Gogh"> Vincent van Gogh</label>
+                    <label><input type="radio" name="q6" value="Leonardo da Vinci"> Leonardo da Vinci</label>
+                    <label><input type="radio" name="q6" value="Pablo Picasso"> Pablo Picasso</label>
+                </div>
+
+                <!-- Question 7 -->
+                <div class="question">
+                    <p>7. What is the currency of Japan?</p>
+                    <label><input type="radio" name="q7" value="Yuan"> Yuan</label>
+                    <label><input type="radio" name="q7" value="Yen"> Yen</label>
+                    <label><input type="radio" name="q7" value="Euro"> Euro</label>
+                </div>
+
+                <!-- Question 8 -->
+                <div class="question">
+                    <p>8. Who wrote 'Pride and Prejudice'?</p>
+                    <label><input type="radio" name="q8" value="Charlotte Brontë"> Charlotte Brontë</label>
+                    <label><input type="radio" name="q8" value="Jane Austen"> Jane Austen</label>
+                    <label><input type="radio" name="q8" value="Emily Brontë"> Emily Brontë</label>
+                </div>
+
+                <!-- Question 9 -->
+                <div class="question">
+                    <p>9. Which element has the chemical symbol 'O'?</p>
+                    <label><input type="radio" name="q9" value="Oxygen"> Oxygen</label>
+                    <label><input type="radio" name="q9" value="Gold"> Gold</label>
+                    <label><input type="radio" name="q9" value="Silver"> Silver</label>
+                </div>
+
+                <!-- Question 10 -->
+                <div class="question">
+                    <p>10. What is the largest ocean on Earth?</p>
+                    <label><input type="radio" name="q10" value="Atlantic Ocean"> Atlantic Ocean</label>
+                    <label><input type="radio" name="q10" value="Indian Ocean"> Indian Ocean</label>
+                    <label><input type="radio" name="q10" value="Pacific Ocean"> Pacific Ocean</label>
+                </div>
+
+                <!-- Continue adding questions 11 to 20 using a similar structure -->
+
+                <button type="button" onclick="submitQuiz()">Submit</button>
+            </form>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

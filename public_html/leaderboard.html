@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Leaderboard</title>
+</head>
+<body>
+    <header>
+        <h1>Quiz Leaderboard</h1>
+    </header>
+    <main>
+        <img src="images/AI.png" alt="Leaderboard Image" class="leaderboard-image">
+
+        <section id="leaderboard">
+            <h2>Top Scores</h2>
+            <ul id="scoreList", class="top-scores-list"></ul>
+            <button onclick="goToQuizPage()">Back to Quiz</button>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+    <script>displayLeaderboard();</script>
+</body>
+</html>

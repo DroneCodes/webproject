@@ -1,0 +1,117 @@
+/* Reset some default styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+header {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 1em;
+    text-align: center;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+button {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Quiz Styles */
+#quiz {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#quizForm {
+    margin-top: 10px;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+/* Leaderboard Styles */
+#leaderboard {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#scoreList {
+    list-style: none;
+    padding: 0;
+}
+
+.leaderboard-image {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+#usernameScreen {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#usernameForm {
+    margin-top: 10px;
+}
+
+#usernameForm label {
+    display: block;
+    margin-bottom: 5px;
+    color: #495057;
+}
+
+#usernameForm input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.top-scores-list {
+    padding: 0;
+}
+
+.top-scores-list li {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.top-scores-list li:hover {
+    background-color: #e0e0e0;
+}
